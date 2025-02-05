@@ -3,7 +3,15 @@ import google.generativeai as genai
 
 # ai stuff
 genai.configure(api_key="ENTER_GOOGLE_API_KEY_HERE")
-model = genai.GenerativeModel("gemini-1.5-flash")
+
+# leave as is if you just want basic AI
+model = genai.GenerativeModel(
+    "gemini-1.5-flash",)
+
+# uncomment the below and update the "system_instruction" variable to give your AI personality - like the one i made below, customize to whatever)
+# model = genai.GenerativeModel(
+#         model_name = "gemini-1.5-flash",
+#         system_instruction= "Act as a Gen-Z gamer that's trying to compete with everyone, but shy. Your name is Bubbles")
 
 def chat(user_input: str):
     response = model.generate_content(user_input)
