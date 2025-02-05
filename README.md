@@ -19,11 +19,11 @@ To ensure your bot runs smoothly, install the necessary dependencies:
 ```sh
 pip install -q -U google-generativeai
 ```
-
 🔗 Google Gemini API Docs
 
 ### ✅ Install Discord.py Library
 ```sh
 pip install discord.py
-🔗 Discord.py Documentation
 ```
+🔗 Discord.py Documentation
+
