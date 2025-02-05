@@ -1,14 +1,18 @@
-get your api key from google for the code
-https://aistudio.google.com/app/apikey
+# Setting Up Your Discord AI Bot
 
-get your token from discord
-if you haven't already made one here's a guide on how to make your own bot so you can get the token
-https://realpython.com/how-to-make-a-discord-bot-python/
+## 1. Get Your API Key from Google
+To use Google's AI in your bot, obtain an API key from Google AI Studio:
 
-modules you need for the discord ai bot
+🔗 [Get API Key](https://aistudio.google.com/app/apikey)
 
+## 2. Get Your Discord Bot Token
+You'll need a bot token from Discord. If you haven't created a bot yet, follow this guide:
+
+🔗 [How to Make a Discord Bot](https://realpython.com/how-to-make-a-discord-bot-python/)
+
+## 3. Install Required Modules
+Install the necessary Python modules for your bot:
+
+### Google Generative AI SDK
+```sh
 pip install -q -U google-generativeai
-https://ai.google.dev/gemini-api/docs/quickstart?lang=python
-
-pip install discord.py
-https://discordpy.readthedocs.io/en/stable/intro.html
