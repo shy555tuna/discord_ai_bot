@@ -1,18 +1,29 @@
-# Setting Up Your Discord AI Bot
+# 🚀 Setting Up Your Discord AI Bot with Google Gemini  
 
-## 1. Get Your API Key from Google
-To use Google's AI in your bot, obtain an API key from Google AI Studio:
+This guide will walk you through setting up a **Discord bot** that integrates with **Google's Gemini AI** to generate responses.  
 
-🔗 [Get API Key](https://aistudio.google.com/app/apikey)
+## 1️⃣ Get Your API Key from Google  
+To use Google's AI, you'll need an API key from **Google AI Studio**:  
 
-## 2. Get Your Discord Bot Token
-You'll need a bot token from Discord. If you haven't created a bot yet, follow this guide:
+🔗 [Get API Key](https://aistudio.google.com/app/apikey)  
 
-🔗 [How to Make a Discord Bot](https://realpython.com/how-to-make-a-discord-bot-python/)
+## 2️⃣ Get Your Discord Bot Token  
+You'll need a bot token from Discord to connect your bot to a server. If you haven't created a bot yet, follow this guide:  
 
-## 3. Install Required Modules
-Install the necessary Python modules for your bot:
+🔗 [How to Make a Discord Bot](https://realpython.com/how-to-make-a-discord-bot-python/)  
 
-### Google Generative AI SDK
+## 3️⃣ Install Required Python Modules  
+To ensure your bot runs smoothly, install the necessary dependencies:  
+
+### ✅ Install Google Generative AI SDK  
 ```sh
 pip install -q -U google-generativeai
+```
+
+🔗 Google Gemini API Docs
+
+### ✅ Install Discord.py Library
+```sh
+pip install discord.py
+🔗 Discord.py Documentation
+```
