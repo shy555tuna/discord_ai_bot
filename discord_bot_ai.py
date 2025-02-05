@@ -30,7 +30,7 @@ class MyClient(discord.Client):
         # Change this to something you would like to start the prompt with
         # like $Chat or a word like hey chat, anything really.
         # I named mine Morpheous like in the Matrix lol
-        if message.content.startswith('Morpheous '):
+        if message.content.lower().startswith('Morpheous '):
             user_input = message.content[4:]
             ai_response = chat(user_input)
             await message.channel.send(ai_response)
