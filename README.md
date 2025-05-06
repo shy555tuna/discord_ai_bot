@@ -91,7 +91,7 @@ This guide will walk you through setting up a Discord bot that chats using Googl
     * Uncomment the `model` section that includes `system_instruction`.
     * Modify the `system_instruction` to give your bot a specific personality. For example:
         ```python
-        model = genai.GenerativeModel(model_name="gemini-pro", generation_config=generation_config)
+        model = genai.GenerativeModel(model_name="gemini-2.0-flash", generation_config=generation_config)
         response = model.generate_content(
             [system_instruction, prompt]
         )
