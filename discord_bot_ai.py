@@ -6,7 +6,7 @@ genai.configure(api_key="ENTER_GOOGLE_API_KEY_HERE")
 
 # leave as is if you just want basic AI
 # comment this out and uncomment the below if you wanna setup a persona for your bot/ai
-model = genai.GenerativeModel("gemini-1.5-flash",)
+model = genai.GenerativeModel("gemini-2.0-flash",)
 
 # uncomment the below and update the "system_instruction" variable to give your AI personality - like the one i made below, customize to whatever)
 # model = genai.GenerativeModel(
