@@ -84,7 +84,7 @@ This guide will walk you through setting up a Discord bot that chats using Googl
 
 ## Step 3: Tweak the Code
 
-1.  Open the `bot.py` file in your text editor.
+1.  Open the `discord_bot_ai.py` file in your text editor.
 2.  Replace `ENTER_GOOGLE_API_KEY_HERE` with the Google Gemini API key you obtained.
 3.  Replace `ENTER_DISCORD_KEY_HERE` with your Discord bot token.
 4.  **(Optional) Customize the Bot's Persona:**
