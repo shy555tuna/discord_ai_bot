@@ -10,7 +10,7 @@ model = genai.GenerativeModel("gemini-2.0-flash",)
 
 # uncomment the below and update the "system_instruction" variable to give your AI personality - like the one i made below, customize to whatever)
 # model = genai.GenerativeModel(
-#         model_name = "gemini-1.5-flash",
+#         model_name = "gemini-2.0-flash",
 #         system_instruction= "Act as a Gen-Z gamer that's trying to compete with everyone, but shy. Your name is Bubbles")
 
 def chat(user_input: str):
