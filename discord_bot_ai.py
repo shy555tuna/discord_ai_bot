@@ -31,7 +31,7 @@ class MyClient(discord.Client):
         # like $Chat or a word like hey chat, anything really.
         # I named mine Morpheous like in the Matrix lol
         if message.content.lower().startswith('Morpheous '):
-            user_input = message.content[4:]
+            user_input = message.content[10:]
             ai_response = chat(user_input)
             await message.channel.send(ai_response)
 
