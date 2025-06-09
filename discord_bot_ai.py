@@ -27,7 +27,7 @@ class MyClient(discord.Client):
 
     async def on_message(self, message: discord.Message):
         # so we don't respond to ourselves
-        if discord.Message.author == self.user:
+        if message.author == self.user:
             return
         
         # Change this to something you would like to start the prompt with
