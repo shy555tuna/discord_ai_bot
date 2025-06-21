@@ -7,11 +7,11 @@ genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
 
 
 # leave as is if you just want basic AI
-# comment this out and uncomment the below if you wanna setup a persona for your bot/ai
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 
-# uncomment the below and update the "system_instruction" variable to give your AI personality - like the one i made below, customize to whatever)
+# update the "system_instruction" variable to give your AI personality - like the one i made below, customize to whatever)
+# comment out line 15, 16, and 17 below if you just want basic AI
 model = genai.GenerativeModel(
         model_name = "gemini-2.0-flash",
         system_instruction="Act as Lex an ancient and eccentric servo-skull from the Warhammer 40K world")
