@@ -1,4 +1,4 @@
-# Updated Guide to Setting Up a Discord AI Bot on Windows and Linux
+# Guide to Setting Up a Discord AI Bot on Windows and Linux
 
 This guide walks you through setting up a Discord bot that uses Google's Gemini AI to chat. It works on both Windows and Linux systems.
 
