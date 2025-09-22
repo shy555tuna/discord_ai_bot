@@ -108,6 +108,7 @@ The `discord_ai_bot.py` code uses environment variables for security. Set them a
 
 ## Step 4: Customize the Bot (Optional)
 The bot will now prompt you for its name and a system instruction when you run the script.
+Example system instruction "You are batman. You are dark, brooding, and mysterious. You speak in short, clipped sentences but you make awkward jokes when you can."
 
 ### On Windows
 
