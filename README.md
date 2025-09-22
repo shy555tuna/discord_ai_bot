@@ -107,23 +107,39 @@ The `discord_ai_bot.py` code uses environment variables for security. Set them a
    ```
 
 ## Step 4: Customize the Bot (Optional)
+The bot will now prompt you for its name and a system instruction when you run the script.
 
-1. **Change the Trigger Word**:
-   - In `discord_ai_bot.py`, locate the line in the `on_message` method:
-     ```python
-     if str(message.content).lower().startswith('Morpheous ') or (self.user in message.mentions):
-     ```
-   - Replace `'Morpheous '` with your desired trigger phrase (e.g., `'!chat '`) or modify the condition as needed.
+### On Windows
 
-2. **Customize the Bot's Persona**:
-   - By default, the bot uses a basic AI model. To give it a personality:
-   - Uncomment the following section in `discord_ai_bot.py`:
-     ```python
-     model = genai.GenerativeModel(
-         model_name = "gemini-2.0-flash",
-         system_instruction="Act as Lex an ancient and eccentric servo-skull from the Warhammer 40K world")
-     ```
-   - Modify the `system_instruction` to define a unique personality, e.g., "Act as a friendly pirate named Captain Sparrow."
+1.  Open Command Prompt and navigate to your project folder:
+    ```
+    cd path\to\DiscordAIBot
+    ```
+2.  Run the bot:
+    ```
+    python discord_ai_bot.py
+    ```
+3.  The script will ask you to enter a name for your AI and a system instruction to define its personality. Enter your desired values. If you leave the system instruction blank, the bot will use a default persona.
+4.  If successful, the console will display:
+    ```
+    Logged on as YourBotName#1234
+    ```
+
+### On Linux
+
+1.  Open a terminal and navigate to your project folder:
+    ```
+    cd ~/DiscordAIBot
+    ```
+2.  Run the bot:
+    ```
+    python3 discord_ai_bot.py
+    ```
+3.  The script will ask you to enter a name for your AI and a system instruction to define its personality. Enter your desired values. If you leave the system instruction blank, the bot will use a default persona.
+4.  If successful, the console will display:
+    ```
+    Logged on as YourBotName#1234
+    ```
 
 ## Step 5: Run the Bot
 
