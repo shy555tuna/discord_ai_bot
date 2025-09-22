@@ -5,16 +5,22 @@ import os
 # ai stuff
 genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
 
+# bind ai name to model
+ai_name = input("What do you want to name your AI? ")
+print(f"Your AI is named {ai_name}")
 
-# leave as is if you just want basic AI
-model = genai.GenerativeModel("gemini-2.0-flash")
-
-
-# update the "system_instruction" variable to give your AI personality - like the one i made below, customize to whatever)
-# comment out line 15, 16, and 17 below if you just want basic AI
-model = genai.GenerativeModel(
-        model_name = "gemini-2.0-flash",
-        system_instruction="Act as Lex an ancient and eccentric servo-skull from the Warhammer 40K world")
+# update the "system_instruction" variable to give your AI personality - customize to whatever)
+# for example: "You are batman. You are dark, brooding, and mysterious. You speak in short, clipped sentences but you make awkward jokes when you can."
+system_instruction = input("Enter a system instruction for your AI (or leave blank for default): ")
+if system_instruction:
+    model = genai.GenerativeModel(
+        model_name="gemini-2.0-flash",
+        system_instruction=system_instruction
+    )
+    print("Using custom system instruction.")
+else:
+    model = genai.GenerativeModel("gemini-2.0-flash")
+    print("Using default system instruction.")
 
 def chat(user_input: str):
     response = model.generate_content(user_input)
@@ -29,12 +35,9 @@ class MyClient(discord.Client):
         # so we don't respond to ourselves
         if message.author == self.user:
             return
-        
-        # Change this to something you would like to start the prompt with
-        # like $Chat or a word like hey chat, anything really.
-        # I named mine Morpheous like in the Matrix lol       
-        if str(message.content).lower().startswith('Morpheous ') or (self.user in message.mentions):
-            user_input = message.content[6:]
+        # this block listens for your AI's name to be mentioned then relays your message to the ai
+        if str(message.content).lower().startswith(f'{ai_name.lower()} ') or (self.user in message.mentions):
+            user_input = message.content.removeprefix(f'{ai_name} ')
             ai_response = chat(user_input)
             await message.channel.send(ai_response)
 
