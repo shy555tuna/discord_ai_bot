@@ -142,38 +142,7 @@ Example system instruction "You are batman. You are dark, brooding, and mysterio
     Logged on as YourBotName#1234
     ```
 
-## Step 5: Run the Bot
-
-### On Windows
-1. Open Command Prompt and navigate to your project folder:
-   ```
-   cd path\to\DiscordAIBot
-   ```
-   Replace `path\to\DiscordAIBot` with the actual path.
-2. Run the bot:
-   ```
-   python discord_ai_bot.py
-   ```
-3. If successful, you’ll see:
-   ```
-   Logged on as YourBotName#1234
-   ```
-
-### On Linux
-1. Open a terminal and navigate to your project folder:
-   ```
-   cd ~/DiscordAIBot
-   ```
-2. Run the bot:
-   ```
-   python3 discord_ai_bot.py
-   ```
-3. If successful, you’ll see:
-   ```
-   Logged on as YourBotName#1234
-   ```
-
-## Step 6: Test the Vibes
+## Step 5: Test the Vibes
 
 1. Go to your Discord server where the bot is added.
 2. Send a message using the trigger word or mention the bot (e.g., `Morpheous Hello!` or `@YourBotName What's up?`).
