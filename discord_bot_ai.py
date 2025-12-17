@@ -4,7 +4,7 @@ import os
 
 # ai stuff
 genai.configure(api_key=os.environ.get('GEMINI_API_KEY'))
-model = "gemini-3-pro-preview"
+model_version = "gemini-3-pro-preview"
 
 # bind ai name to model and persona
 ai_name = input("What do you want to name your AI? ")
@@ -13,12 +13,12 @@ system_instruction = input("Enter a system instruction for your AI (or leave bla
 
 if system_instruction:
     model = genai.GenerativeModel(
-        model_name=model,
+        model_name=model_version,
         system_instruction=system_instruction
     )
     print("Using custom system instruction.")
 else:
-    model = genai.GenerativeModel(model)
+    model = genai.GenerativeModel(model_version)
     print("Using default system instruction.")
 
 def chat(user_input: str):
