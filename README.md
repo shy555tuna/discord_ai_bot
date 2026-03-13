@@ -53,6 +53,40 @@ Then open http://localhost:5000
 
 ---
 
+## Getting a Gemini API Key
+
+You need a Gemini API key to power the AI responses. It's free to get.
+
+**Step 1 — Sign in to Google AI Studio**
+
+1. Go to https://aistudio.google.com
+2. Sign in with your Google account
+
+**Step 2 — Create an API Key**
+
+1. Click **Get API Key** in the left sidebar
+2. Click **Create API key**
+3. Select an existing Google Cloud project or click **Create a new project**
+4. Click **Create API key in existing project**
+5. Copy the key that appears — it starts with `AIza`
+
+> Keep your API key private. Do not share it or commit it to GitHub.
+
+**Step 3 — Enter it in ShyNet**
+
+1. Open http://localhost:5000
+2. Go to **Configuration**
+3. Paste the key into the **Gemini API Key** field
+4. Click **Save Configuration**
+
+**Free tier limits:**
+- 1,500 requests per day
+- 15 requests per minute
+
+If you need more, enable billing at https://ai.google.dev — usage costs are minimal for personal bots.
+
+---
+
 ## Adding Your Bot to a Discord Server
 
 Before ShyNet can connect to Discord, you need to create a bot account and invite it to your server. This only needs to be done once.
