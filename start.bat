@@ -4,7 +4,7 @@ title ShyNet — Discord AI Bot Manager
 
 echo.
 echo ╔══════════════════════════════════════╗
-echo ║        ShyNet — AI Discord Bot     ║
+echo ║        ShyNet — AI Discord Bot       ║
 echo ╚══════════════════════════════════════╝
 echo.
 
